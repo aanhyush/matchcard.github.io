@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match The Card</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <div class="center" id="hid">
+
+        <button type="button" id="btn1" onclick="startgame()"> start the game </button>
+    </div>
+    <div id="numbergame">
+        <div id="p1">
+            Player 1 = <span id="point1"> 0 </span>
+        </div>
+      
+        <div id="carddiv">
+            <div class="card" id="num1">
+                <div class="card-inner" id="inner"
+                    onclick="document.getElementById('inner').style.transform = 'rotateY(180deg)' , check(num1)">
+                    <div class="card-front">
+                        <p>?</p>
+                    </div>
+                    <div class="card-back">
+                        <p>1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="num2">
+                <div class="card-inner" id="inner2"
+                    onclick="document.getElementById('inner2').style.transform = 'rotateY(180deg)',check(num2)">
+                    <div class="card-front">
+                        <p>?</p>
+                    </div>
+                    <div class="card-back">
+                        <p>2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="num3">
+                <div class="card-inner" id="inner3"
+                    onclick="document.getElementById('inner3').style.transform = 'rotateY(180deg)',check(num3)">
+                    <div class="card-front">
+                        <p>?</p>
+                    </div>
+                    <div class="card-back">
+                        <p>3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="num4">
+                <div class="card-inner" id="inner4"
+                    onclick="document.getElementById('inner4').style.transform = 'rotateY(180deg)',check(num4)">
+                    <div class="card-front">
+                        <p>?</p>
+                    </div>
+                    <div class="card-back">
+                        <p>4</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="num5">
+                <div class="card-inner" id="inner5"
+                    onclick="document.getElementById('inner5').style.transform = 'rotateY(180deg)',check(num5)">
+                    <div class="card-front">
+                        <p>?</p>
+                    </div>
+                    <div class="card-back">
+                        <p>5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="num6">
+                <div class="card-inner" id="inner6"
+                    onclick="document.getElementById('inner6').style.transform = 'rotateY(180deg)',check(num6)">
+                    <div class="card-front">
+                        <p>?</p>
+                    </div>
+                    <div class="card-back">
+                        <p>6</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="num7">
+                <div class="card-inner" id="inner7"
+                    onclick="document.getElementById('inner7').style.transform = 'rotateY(180deg)',check(num7)">
+                    <div class="card-front">
+                        <p>?</p>
+                    </div>
+                    <div class="card-back">
+                        <p>7</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="num8">
+                <div class="card-inner" id="inner8"
+                    onclick="document.getElementById('inner8').style.transform = 'rotateY(180deg)',check(num8)">
+                    <div class="card-front">
+                        <p>?</p>
+                    </div>
+                    <div class="card-back">
+                        <p>8</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="num9">
+                <div class="card-inner" id="inner9"
+                    onclick="document.getElementById('inner9').style.transform = 'rotateY(180deg)',check(num9)">
+                    <div class="card-front">
+                        <p>?</p>
+                    </div>
+                    <div class="card-back">
+                        <p>9</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="num10">
+                <div class="card-inner" id="inner10"
+                    onclick="document.getElementById('inner10').style.transform = 'rotateY(180deg)',check(num10)">
+                    <div class="card-front">
+                        <p>?</p>
+                    </div>
+                    <div class="card-back">
+                        <p>10</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" id="num11">
+                <div class="card-inner" id="inner11"
+                    onclick="document.getElementById('inner11').style.transform = 'rotateY(180deg)' , check(num11)">
+                    <div class="card-front">
+                        <p>?</p>
+                    </div>
+                    <div class="card-back">
+                        <p>1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="num12">
+                <div class="card-inner" id="inner12"
+                    onclick="document.getElementById('inner12').style.transform = 'rotateY(180deg)',check(num12)">
+                    <div class="card-front">
+                        <p>?</p>
+                    </div>
+                    <div class="card-back">
+                        <p>2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="num13">
+                <div class="card-inner" id="inner13"
+                    onclick="document.getElementById('inner13').style.transform = 'rotateY(180deg)',check(num13)">
+                    <div class="card-front">
+                        <p>?</p>
+                    </div>
+                    <div class="card-back">
+                        <p>3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="num14">
+                <div class="card-inner" id="inner14"
+                    onclick="document.getElementById('inner14').style.transform = 'rotateY(180deg)',check(num14)">
+                    <div class="card-front">
+                        <p>?</p>
+                    </div>
+                    <div class="card-back">
+                        <p>4</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="num15">
+                <div class="card-inner" id="inner15"
+                    onclick="document.getElementById('inner15').style.transform = 'rotateY(180deg)',check(num15)">
+                    <div class="card-front">
+                        <p>?</p>
+                    </div>
+                    <div class="card-back">
+                        <p>5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="num16">
+                <div class="card-inner" id="inner16"
+                    onclick="document.getElementById('inner16').style.transform = 'rotateY(180deg)',check(num16)">
+                    <div class="card-front">
+                        <p>?</p>
+                    </div>
+                    <div class="card-back">
+                        <p>6</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="num17">
+                <div class="card-inner" id="inner17"
+                    onclick="document.getElementById('inner17').style.transform = 'rotateY(180deg)',check(num17)">
+                    <div class="card-front">
+                        <p>?</p>
+                    </div>
+                    <div class="card-back">
+                        <p>7</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="num18">
+                <div class="card-inner" id="inner18"
+                    onclick="document.getElementById('inner18').style.transform = 'rotateY(180deg)',check(num18)">
+                    <div class="card-front">
+                        <p>?</p>
+                    </div>
+                    <div class="card-back">
+                        <p>8</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="num19">
+                <div class="card-inner" id="inner19"
+                    onclick="document.getElementById('inner19').style.transform = 'rotateY(180deg)',check(num19)">
+                    <div class="card-front">
+                        <p>?</p>
+                    </div>
+                    <div class="card-back">
+                        <p>9</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="num20">
+                <div class="card-inner" id="inner20"
+                    onclick="document.getElementById('inner20').style.transform = 'rotateY(180deg)',check(num20)">
+                    <div class="card-front">
+                        <p>?</p>
+                    </div>
+                    <div class="card-back">
+                        <p>10</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div id="p2">
+            Player 2 = <span id="point2"> 0 </span>
+        </div>
+    </div>
+    
+
+        
+   
+    <script src="game.js"></script>
+</body>
+
+</html>
