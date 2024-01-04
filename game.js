@@ -75,12 +75,18 @@ check = (num) => {
                     if (one + two == 10) {
                         if (one > two) {
                             alert("player 1 is winner")
-                        }
+                            location.reload();
+
+                        }  
                         else if (two > one) {
                             alert("player 2 is winner")
+                            location.reload();
+
                         }
                         else {
                             alert('droww')
+                            location.reload();
+
                         }
                     }
                 }
@@ -92,12 +98,18 @@ check = (num) => {
                     if (one + two == 10) {
                         if (one > two) {
                             alert("player 1 is winner")
+                            location.reload();
+
                         }
                         else if (two > one) {
                             alert("player 2 is winner")
+                            location.reload();
+
                         }
                         else {
                             alert('droww')
+                            location.reload();
+
                         }
                     }
 
