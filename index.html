@@ -11,7 +11,8 @@
 <body>
     <div class="center" id="hid">
 
-        <button type="button" id="btn1" onclick="startgame()"> start the game </button>
+        <button type="button" id="btn1" onclick="startgame()"> start the Number game </button>
+        <button type="button" id="btn2" onclick="startpicgame()"> start the Pic game </button>
     </div>
     <div id="numbergame">
         <div id="p1">
@@ -250,6 +251,237 @@
     </div>
     
 
+<div id="picgame">
+    <div id="picp1">
+        Player 1 = <span id="picpoint1"> 0 </span>
+    </div>
+    <div id="carddiv">
+        <div class="card" id="pic1">
+            <div class="card-inner" id="innerpic"
+                onclick="document.getElementById('innerpic').style.transform = 'rotateY(180deg)' , check(pic1)">
+                <div class="card-front">
+                    <p>?</p>
+                </div>
+                <div class="card-back" >
+                    <img src="img/apple.png" alt="apple" height="100%" width="100%" style="border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+        <div class="card" id="pic2">
+            <div class="card-inner" id="innerpic2"
+                onclick="document.getElementById('innerpic2').style.transform = 'rotateY(180deg)' , check(pic2)">
+                <div class="card-front">
+                    <p>?</p>
+                </div>
+                <div class="card-back" >
+                    <img src="img/blackberry.jpg" alt="blackberry" height="100%" width="100%" style="border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+        <div class="card" id="pic3">
+            <div class="card-inner" id="innerpic3"
+                onclick="document.getElementById('innerpic3').style.transform = 'rotateY(180deg)' , check(pic3)">
+                <div class="card-front">
+                    <p>?</p>
+                </div>
+                <div class="card-back" >
+                    <img src="img/custard_apple.png" alt="custard_apple" height="100%" width="100%" style="border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+        <div class="card" id="pic4">
+            <div class="card-inner" id="innerpic4"
+                onclick="document.getElementById('innerpic4').style.transform = 'rotateY(180deg)' , check(pic4)">
+                <div class="card-front">
+                    <p>?</p>
+                </div>
+                <div class="card-back" >
+                    <img src="img/guava.png" alt="guava" height="100%" width="100%" style="border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+        <div class="card" id="pic5">
+            <div class="card-inner" id="innerpic5"
+                onclick="document.getElementById('innerpic5').style.transform = 'rotateY(180deg)' , check(pic5)">
+                <div class="card-front">
+                    <p>?</p>
+                </div>
+                <div class="card-back" >
+                    <img src="img/kiwi.png" alt="kiwi" height="100%" width="100%" style="border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+        <div class="card" id="pic6">
+            <div class="card-inner" id="innerpic6"
+                onclick="document.getElementById('innerpic6').style.transform = 'rotateY(180deg)' , check(pic6)">
+                <div class="card-front">
+                    <p>?</p>
+                </div>
+                <div class="card-back" >
+                    <img src="img/lychees.png" alt="lychees" height="100%" width="100%" style="border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+        <div class="card" id="pic7">
+            <div class="card-inner" id="innerpic7"
+                onclick="document.getElementById('innerpic7').style.transform = 'rotateY(180deg)' , check(pic7)">
+                <div class="card-front">
+                    <p>?</p>
+                </div>
+                <div class="card-back" >
+                    <img src="img/orange.png" alt="orange" height="100%" width="100%" style="border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+        <div class="card" id="pic8">
+            <div class="card-inner" id="innerpic8"
+                onclick="document.getElementById('innerpic8').style.transform = 'rotateY(180deg)' , check(pic8)">
+                <div class="card-front">
+                    <p>?</p>
+                </div>
+                <div class="card-back" >
+                    <img src="img/pineapple.png" alt="pineapple" height="100%" width="100%" style="border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+        <div class="card" id="pic9">
+            <div class="card-inner" id="innerpic9"
+                onclick="document.getElementById('innerpic9').style.transform = 'rotateY(180deg)' , check(pic9)">
+                <div class="card-front">
+                    <p>?</p>
+                </div>
+                <div class="card-back" >
+                    <img src="img/raspberries.jpg" alt="raspberries" height="100%" width="100%" style="border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+        <div class="card" id="pic10">
+            <div class="card-inner" id="innerpic10"
+                onclick="document.getElementById('innerpic10').style.transform = 'rotateY(180deg)' , check(pic10)">
+                <div class="card-front">
+                    <p>?</p>
+                </div>
+                <div class="card-back" >
+                    <img src="img/strawberry.png" alt="strawberry" height="100%" width="100%" style="border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="pic11">
+            <div class="card-inner" id="innerpic11"
+                onclick="document.getElementById('innerpic11').style.transform = 'rotateY(180deg)' , check(pic11)">
+                <div class="card-front">
+                    <p>?</p>
+                </div>
+                <div class="card-back" >
+                    <img src="img/apple.png" alt="apple" height="100%" width="100%" style="border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+        <div class="card" id="pic12">
+            <div class="card-inner" id="innerpic12"
+                onclick="document.getElementById('innerpic12').style.transform = 'rotateY(180deg)' , check(pic12)">
+                <div class="card-front">
+                    <p>?</p>
+                </div>
+                <div class="card-back" >
+                    <img src="img/blackberry.jpg" alt="blackberry" height="100%" width="100%" style="border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+        <div class="card" id="pic13">
+            <div class="card-inner" id="innerpic13"
+                onclick="document.getElementById('innerpic13').style.transform = 'rotateY(180deg)' , check(pic13)">
+                <div class="card-front">
+                    <p>?</p>
+                </div>
+                <div class="card-back" >
+                    <img src="img/custard_apple.png" alt="custard_apple" height="100%" width="100%" style="border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+        <div class="card" id="pic14">
+            <div class="card-inner" id="innerpic14"
+                onclick="document.getElementById('innerpic14').style.transform = 'rotateY(180deg)' , check(pic14)">
+                <div class="card-front">
+                    <p>?</p>
+                </div>
+                <div class="card-back" >
+                    <img src="img/guava.png" alt="guava" height="100%" width="100%" style="border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+        <div class="card" id="pic15">
+            <div class="card-inner" id="innerpic15"
+                onclick="document.getElementById('innerpic15').style.transform = 'rotateY(180deg)' , check(pic15)">
+                <div class="card-front">
+                    <p>?</p>
+                </div>
+                <div class="card-back" >
+                    <img src="img/kiwi.png" alt="kiwi" height="100%" width="100%" style="border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+        <div class="card" id="pic16">
+            <div class="card-inner" id="innerpic16"
+                onclick="document.getElementById('innerpic16').style.transform = 'rotateY(180deg)' , check(pic16)">
+                <div class="card-front">
+                    <p>?</p>
+                </div>
+                <div class="card-back" >
+                    <img src="img/lychees.png" alt="lychees" height="100%" width="100%" style="border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+        <div class="card" id="pic17">
+            <div class="card-inner" id="innerpic17"
+                onclick="document.getElementById('innerpic17').style.transform = 'rotateY(180deg)' , check(pic17)">
+                <div class="card-front">
+                    <p>?</p>
+                </div>
+                <div class="card-back" >
+                    <img src="img/orange.png" alt="orange" height="100%" width="100%" style="border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+        <div class="card" id="pic18">
+            <div class="card-inner" id="innerpic18"
+                onclick="document.getElementById('innerpic18').style.transform = 'rotateY(180deg)' , check(pic18)">
+                <div class="card-front">
+                    <p>?</p>
+                </div>
+                <div class="card-back" >
+                    <img src="img/pineapple.png" alt="pineapple" height="100%" width="100%" style="border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+        <div class="card" id="pic19">
+            <div class="card-inner" id="innerpic19"
+                onclick="document.getElementById('innerpic19').style.transform = 'rotateY(180deg)' , check(pic19)">
+                <div class="card-front">
+                    <p>?</p>
+                </div>
+                <div class="card-back" >
+                    <img src="img/raspberries.jpg" alt="raspberries" height="100%" width="100%" style="border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+        <div class="card" id="pic20">
+            <div class="card-inner" id="innerpic20"
+                onclick="document.getElementById('innerpic20').style.transform = 'rotateY(180deg)' , check(pic20)">
+                <div class="card-front">
+                    <p>?</p>
+                </div>
+                <div class="card-back" >
+                    <img src="img/strawberry.png" alt="strawberry" height="100%" width="100%" style="border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="picp2">
+        Player 2 = <span id="picpoint2"> 0 </span>
+    </div>
+</div>
         
    
     <script src="game.js"></script>
