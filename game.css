@@ -1,3 +1,77 @@
+@media only screen and (max-width: 400px) {
+  .center{
+    flex-direction: column;
+  }
+  #numbergame{
+    flex-direction: column;
+  }
+  #picgame{
+    flex-direction: column;
+  }
+  .card{
+    height: 50px;
+    width: 70px;
+    margin: 2px;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .center{
+    flex-direction: column;
+  }
+  #numbergame{
+    flex-direction: column;
+  }
+  #picgame{
+    flex-direction: column;
+  }
+  .card{
+    height: 50px;
+    width: 100px;
+    margin: 5px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 940px){
+  .center{
+    flex-direction: column;
+  }
+  #numbergame{
+    flex-direction: column;
+  }
+  #picgame{
+    flex-direction: column;
+  }
+  .card{
+    height: 70px;
+    width: 120px;
+    margin: 5px;
+  }
+}
+
+@media only screen and (min-width: 941px){
+  .center{
+    flex-direction: column;
+  
+  }
+  .card{
+    height: 100px;
+    width: 150px;
+    margin: 10px;
+  }
+}
+
+#fullscreen-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: -1;
+  justify-content: center;
+  overflow: hidden;
+}
+
 body{
   margin: 0px;
 }
@@ -22,9 +96,7 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 50px;
-    height: 100px;
-    width: 150px;
-    margin: 10px;
+    
     transition: all 1s;
   }
   .card-inner {
@@ -101,4 +173,31 @@ body{
   align-items: center;
   justify-content: space-around;
   height: 100vh;
+}
+
+#p1{
+  border: 1px black solid;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+
+
+}
+#p2{
+  border: 1px black solid;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+}
+#picp1{
+  border: 1px black solid;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+
+
+}
+#picp2{
+  border: 1px black solid;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+
+
 }

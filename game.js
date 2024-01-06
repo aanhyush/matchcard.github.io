@@ -12,22 +12,25 @@ let secpic
 
 startgame = () => {
     document.getElementById('hid').style.display = 'none';
+    document.getElementById('fullscreen-container').style.display = 'none';
     document.getElementById('numbergame').style.display = "flex";
 
     let randomNum = Math.floor(Math.random() * 2) + 1;
 
-    
-        if (randomNum == 1) {
-            p1.style.color = 'red';
-            alert("player 1's turn")
 
-        }
-        if (randomNum == 2) {
-            p2.style.color = 'red';
-            alert("player 2's turn")
+    if (randomNum == 1) {
+        p1.style.color = 'red';
+        p1.style.boxShadow = "0 0 20px 5px red";
+        alert("player 1's turn")
 
-        }
-    
+    }
+    if (randomNum == 2) {
+        p2.style.color = 'red';
+        p2.style.boxShadow = "0 0 20px 5px red";
+        alert("player 2's turn")
+
+    }
+
     check = (num) => {
         let Totalpoint1 = parseInt(document.getElementById("point1").innerText)
         let Totalpoint2 = parseInt(document.getElementById("point2").innerText)
@@ -111,11 +114,18 @@ startgame = () => {
                         firstnum = null
                         secnum = null
                         if (p1.style.color == "black") {
+                            p1.style.boxShadow = "0 0 20px 5px red";
+                            p2.style.boxShadow = "0 0 0 0";
+
                             p1.style.color = "red"
                             p2.style.color = "black"
                         }
                         else {
                             p1.style.color = "black"
+                            p2.style.boxShadow = "0 0 20px 5px red";
+                            p1.style.boxShadow = "0 0 0 0";
+
+
                             p2.style.color = "red"
                         }
 
@@ -149,6 +159,7 @@ startgame = () => {
 
 startpicgame = () => {
     document.getElementById('hid').style.display = 'none';
+    document.getElementById('fullscreen-container').style.display = 'none';
     document.getElementById('picgame').style.display = "flex";
 
     // now shuffle 
@@ -165,11 +176,14 @@ startpicgame = () => {
     let randomNum = Math.floor(Math.random() * 2) + 1;
 
     if (randomNum == 1) {
+        picp1.style.boxShadow = "0 0 20px 5px red";
+
         picp1.style.color = 'red';
         alert("player 1's turn")
 
     }
     if (randomNum == 2) {
+        picp2.style.boxShadow = "0 0 20px 5px red";
         picp2.style.color = 'red';
         alert("player 2's turn")
 
@@ -262,10 +276,16 @@ startpicgame = () => {
                         firstpic = null
                         secpic = null
                         if (picp1.style.color == "black") {
+                            picp1.style.boxShadow = "0 0 20px 5px red";
+                            picp2.style.boxShadow = "0 0 0 0";
+
                             picp1.style.color = "red"
                             picp2.style.color = "black"
                         }
                         else {
+                            picp2.style.boxShadow = "0 0 20px 5px red";
+                            picp1.style.boxShadow = "0 0 0 0";
+
                             picp1.style.color = "black"
                             picp2.style.color = "red"
                         }
