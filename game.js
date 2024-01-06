@@ -12,7 +12,7 @@ let secpic
 
 startgame = () => {
     document.getElementById('hid').style.display = 'none';
-    document.getElementById('fullscreen-container').style.display = 'none';
+    // document.getElementById('fullscreen-container').style.display = 'none';
     document.getElementById('numbergame').style.display = "flex";
 
     let randomNum = Math.floor(Math.random() * 2) + 1;
@@ -159,7 +159,7 @@ startgame = () => {
 
 startpicgame = () => {
     document.getElementById('hid').style.display = 'none';
-    document.getElementById('fullscreen-container').style.display = 'none';
+    // document.getElementById('fullscreen-container').style.display = 'none';
     document.getElementById('picgame').style.display = "flex";
 
     // now shuffle 
