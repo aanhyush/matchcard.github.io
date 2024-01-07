@@ -201,3 +201,29 @@ body{
 
 
 }
+.plusboth{
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+#plus{
+    animation: plusani 1s ease;
+  }
+@keyframes plusani {
+  0%{
+    opacity: 0.2;
+    height: 0px;
+    width: 0px;
+  }
+  50%{
+    opacity: 1;
+    height: 40px;
+    width: 40px;
+  }
+  100%{
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+  }
+  
+}

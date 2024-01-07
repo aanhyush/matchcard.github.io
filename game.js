@@ -17,15 +17,16 @@ startgame = () => {
 
     let randomNum = Math.floor(Math.random() * 2) + 1;
 
-
     if (randomNum == 1) {
         p1.style.color = 'red';
+        p2.style.color = "black"
         p1.style.boxShadow = "0 0 20px 5px red";
         alert("player 1's turn")
 
     }
     if (randomNum == 2) {
         p2.style.color = 'red';
+        p1.style.color = 'black';
         p2.style.boxShadow = "0 0 20px 5px red";
         alert("player 2's turn")
 
@@ -49,6 +50,7 @@ startgame = () => {
             // console.log(mainnum2)
             if (firstnum === secnum) {
                 // alert("nooo")
+
                 // firstnum.getElementsByClassName('card-inner')[0].style.transform = 'rotateY(0deg)'
             }
             else {
@@ -61,6 +63,16 @@ startgame = () => {
                     if (p1.style.color == "black") {
 
                         two = document.getElementById("point2").innerText = Totalpoint2 + 1
+                        document.getElementsByClassName('plusboth')[1].setAttribute('id', 'plus');
+                        setTimeout(function () {
+                            document.getElementById('plus').removeAttribute('id');
+                        }, 1500);
+
+
+
+
+
+
                         console.log(two)
                         if (one + two == 10) {
                             if (one > two) {
@@ -83,6 +95,10 @@ startgame = () => {
                     else {
 
                         one = document.getElementById("point1").innerText = Totalpoint1 + 1
+                        document.getElementsByClassName('plusboth')[0].setAttribute('id', 'plus')
+                        setTimeout(function () {
+                            document.getElementById('plus').removeAttribute('id');
+                        }, 1500);
                         console.log(one)
 
                         if (one + two == 10) {
@@ -111,8 +127,11 @@ startgame = () => {
                     aftertime = () => {
                         firstnum.getElementsByClassName('card-inner')[0].style.transform = 'rotateY(0deg)'
                         secnum.getElementsByClassName('card-inner')[0].style.transform = 'rotateY(0deg)'
+
+
                         firstnum = null
                         secnum = null
+                        
                         if (p1.style.color == "black") {
                             p1.style.boxShadow = "0 0 20px 5px red";
                             p2.style.boxShadow = "0 0 0 0";
@@ -128,7 +147,6 @@ startgame = () => {
 
                             p2.style.color = "red"
                         }
-
                     }
                     setTimeout(aftertime, 600);
 
@@ -156,7 +174,6 @@ startgame = () => {
 
 
 
-
 startpicgame = () => {
     document.getElementById('hid').style.display = 'none';
     // document.getElementById('fullscreen-container').style.display = 'none';
@@ -177,14 +194,15 @@ startpicgame = () => {
 
     if (randomNum == 1) {
         picp1.style.boxShadow = "0 0 20px 5px red";
-
         picp1.style.color = 'red';
+        picp2.style.color = 'black';
         alert("player 1's turn")
 
     }
     if (randomNum == 2) {
         picp2.style.boxShadow = "0 0 20px 5px red";
         picp2.style.color = 'red';
+        picp1.style.color = 'black';
         alert("player 2's turn")
 
     }
@@ -223,6 +241,10 @@ startpicgame = () => {
                     if (picp1.style.color == "black") {
 
                         two = document.getElementById("picpoint2").innerText = Totalpoint2 + 1
+                        document.getElementsByClassName('plusboth')[3].setAttribute('id', 'plus');
+                        setTimeout(function () {
+                            document.getElementById('plus').removeAttribute('id');
+                        }, 1500);
                         console.log(two)
                         if (one + two == 10) {
                             if (one > two) {
@@ -245,6 +267,10 @@ startpicgame = () => {
                     else {
 
                         one = document.getElementById("picpoint1").innerText = Totalpoint1 + 1
+                        document.getElementsByClassName('plusboth')[2].setAttribute('id', 'plus');
+                        setTimeout(function () {
+                            document.getElementById('plus').removeAttribute('id');
+                        }, 1500);
                         console.log(one)
 
                         if (one + two == 10) {
